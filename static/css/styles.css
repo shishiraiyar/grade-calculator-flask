@@ -1,0 +1,10 @@
+.questionDeleteButton {
+    background-color: #aaaaaa;
+
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px;
+    /* font-size: small; */
+
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+{
+    "Web Programming": {
+        "tests": {
+            "Test 1": [
+                {
+                    "questionName": "1",
+                    "maxMarks": "10"
+                }
+            ],
+            "Test 2": [],
+            "Test 3": []
+        },
+        "quizzes": {
+            "Quiz 1": [],
+            "Quiz 2": [],
+            "Quiz 3": []
+        },
+        "el": [],
+        "subjectName": "Web Programming"
+    },
+    "Mathematical Modelling": {
+        "tests": {
+            "Test 1": [
+                {
+                    "questionName": "1",
+                    "maxMarks": "10"
+                },
+                {
+                    "questionName": "2",
+                    "maxMarks": "10"
+                },
+                {
+                    "questionName": "3a",
+                    "maxMarks": "5"
+                },
+                {
+                    "questionName": "3b",
+                    "maxMarks": "5"
+                },
+                {
+                    "questionName": "4",
+                    "maxMarks": "10"
+                },
+                {
+                    "questionName": "5",
+                    "maxMarks": "10"
+                }
+            ],
+            "Test 2": [],
+            "Test 3": []
+        },
+        "quizzes": {
+            "Quiz 1": [],
+            "Quiz 2": [],
+            "Quiz 3": []
+        },
+        "el": [],
+        "subjectName": "Mathematical modelling"
+    },
+    "web programming": {
+        "tests": {
+            "Test 1": [
+                {
+                    "questionName": "1",
+                    "maxMarks": "10"
+                },
+                {
+                    "questionName": "2",
+                    "maxMarks": "10"
+                }
+            ],
+            "Test 2": [],
+            "Test 3": []
+        },
+        "quizzes": {
+            "Quiz 1": [],
+            "Quiz 2": [],
+            "Quiz 3": []
+        },
+        "el": [],
+        "subjectName": "Web Programming"
+    }
+}

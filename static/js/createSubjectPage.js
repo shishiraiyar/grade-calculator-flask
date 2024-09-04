@@ -14,7 +14,7 @@ function createQuestion(){
     question.innerHTML = `
         <input type="text" class="questionNameInput"/>
         <input type="number" class="maxMarksInput"/>
-        <button class="questionDeleteButton" tabindex="-1">❌</button>
+        <span class="questionDeleteButton" tabindex="-1">❌</span>
     `;
     let deleteButton = question.querySelector('.questionDeleteButton');
     deleteButton.addEventListener('click', () => {
@@ -47,7 +47,7 @@ function createForm(name, type){
     wrapper.appendChild(form);
     wrapper.appendChild(addQuestionButton);
 
-    document.body.appendChild(wrapper);
+    document.getElementById("formWrapper").appendChild(wrapper);
     
 }
 
@@ -58,12 +58,10 @@ function aggregateFormData(wrapper){
     for (let question of questions){
         let questionName = question.querySelector('.questionNameInput').value;
         let maxMarks = question.querySelector('.maxMarksInput').value;
-        data.push(
-            {
-                question: questionName,
-                maxMarks: maxMarks
-            }   
-        )
+        data.push({
+            questionName: questionName,
+            maxMarks: maxMarks
+        });
     }
     return data
 
@@ -97,6 +95,21 @@ submitButton.addEventListener('click', () => {
     }
     let questions = aggregateFormData(el);
     data.el = questions;
+
+    data["subjectName"] = document.getElementById('subjectName').value;
+
+    fetch('/createSubject', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log(result);
+            // Handle the response from the server
+    });
 
     console.log(data);
     
