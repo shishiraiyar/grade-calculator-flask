@@ -41,7 +41,7 @@ def marksEntry():
     maxMarks = maxMarksService.read(subjectName)
 
     # marksEntryService.validate(data, maxMarks)
-    marksEntryService.insertStudentMarks(subjectName, email, data)
+    marksEntryService.insertStudentMarks(subjectName, email, data, maxMarks)
     # validate (marks, maxmarks)
     # insert (subjectName, email, marks)
 
