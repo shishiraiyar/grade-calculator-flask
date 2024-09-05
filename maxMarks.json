@@ -1,306 +1,222 @@
 {
-    "Web Programming": {
-        "tests": {
-            "Test 1": [
-                {
-                    "questionName": "1a",
-                    "maxMarks": "5"
-                },
-                {
-                    "questionName": "1b",
-                    "maxMarks": "5"
-                },
-                {
-                    "questionName": "2",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "3",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "4",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "5a",
-                    "maxMarks": "6"
-                },
-                {
-                    "questionName": "5b",
-                    "maxMarks": "4"
-                }
-            ],
-            "Test 2": [
-                {
-                    "questionName": "1",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "2a",
-                    "maxMarks": "7"
-                },
-                {
-                    "questionName": "2b",
-                    "maxMarks": "3"
-                },
-                {
-                    "questionName": "3",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "4a",
-                    "maxMarks": "5"
-                },
-                {
-                    "questionName": "4b",
-                    "maxMarks": "5"
-                },
-                {
-                    "questionName": "5",
-                    "maxMarks": "10"
-                }
-            ],
-            "Test 3": [
-                {
-                    "questionName": "1",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "2",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "3",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "4a",
-                    "maxMarks": "5"
-                },
-                {
-                    "questionName": "4b",
-                    "maxMarks": "5"
-                },
-                {
-                    "questionName": "5a",
-                    "maxMarks": "4"
-                },
-                {
-                    "questionName": "5b",
-                    "maxMarks": "3"
-                },
-                {
-                    "questionName": "5c",
-                    "maxMarks": "3"
-                }
-            ]
+  "Web Programming": {
+    "tests": {
+      "Test 1": [
+        {
+          "questionName": "1a",
+          "maxMarks": "5"
         },
-        "quizzes": {
-            "Quiz 1": [
-                {
-                    "questionName": "1",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "2",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "3",
-                    "maxMarks": "2"
-                },
-                {
-                    "questionName": "4",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "5",
-                    "maxMarks": "2"
-                },
-                {
-                    "questionName": "6",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "7",
-                    "maxMarks": "2"
-                }
-            ],
-            "Quiz 2": [
-                {
-                    "questionName": "1",
-                    "maxMarks": "2"
-                },
-                {
-                    "questionName": "2",
-                    "maxMarks": "2"
-                },
-                {
-                    "questionName": "3",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "4",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "5",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "6",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "7",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "8",
-                    "maxMarks": "1"
-                }
-            ],
-            "Quiz 3": [
-                {
-                    "questionName": "1",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "2",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "3",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "4",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "5",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "6",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "7",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "8",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "9",
-                    "maxMarks": "1"
-                },
-                {
-                    "questionName": "10",
-                    "maxMarks": "1"
-                }
-            ]
+        {
+          "questionName": "1b",
+          "maxMarks": "5"
         },
-        "el": [
-            {
-                "questionName": "Phase 1",
-                "maxMarks": "20"
-            },
-            {
-                "questionName": "Phase 2",
-                "maxMarks": "20"
-            }
-        ],
-        "subjectName": "Web Programming"
+        {
+          "questionName": "2",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "3",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "4",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "5a",
+          "maxMarks": "6"
+        },
+        {
+          "questionName": "5b",
+          "maxMarks": "4"
+        }
+      ],
+      "Test 2": [
+        {
+          "questionName": "1",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "2a",
+          "maxMarks": "7"
+        },
+        {
+          "questionName": "2b",
+          "maxMarks": "3"
+        },
+        {
+          "questionName": "3",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "4a",
+          "maxMarks": "5"
+        },
+        {
+          "questionName": "4b",
+          "maxMarks": "5"
+        },
+        {
+          "questionName": "5",
+          "maxMarks": "10"
+        }
+      ],
+      "Test 3": [
+        {
+          "questionName": "1",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "2",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "3",
+          "maxMarks": "10"
+        },
+        {
+          "questionName": "4a",
+          "maxMarks": "5"
+        },
+        {
+          "questionName": "4b",
+          "maxMarks": "5"
+        },
+        {
+          "questionName": "5a",
+          "maxMarks": "4"
+        },
+        {
+          "questionName": "5b",
+          "maxMarks": "3"
+        },
+        {
+          "questionName": "5c",
+          "maxMarks": "3"
+        }
+      ]
     },
-    "Math": {
-        "tests": {
-            "Test 1": [
-                {
-                    "questionName": "1a",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "2a",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "3a",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "4a",
-                    "maxMarks": "10"
-                },
-                {
-                    "questionName": "5a",
-                    "maxMarks": "10"
-                }
-            ],
-            "Test 2": [],
-            "Test 3": []
+    "quizzes": {
+      "Quiz 1": [
+        {
+          "questionName": "1",
+          "maxMarks": "1"
         },
-        "quizzes": {
-            "Quiz 1": [
-                {
-                    "questionName": "",
-                    "maxMarks": ""
-                }
-            ],
-            "Quiz 2": [],
-            "Quiz 3": []
+        {
+          "questionName": "2",
+          "maxMarks": "1"
         },
-        "el": [
-            {
-                "questionName": "poop el",
-                "maxMarks": "40"
-            }
-        ],
-        "subjectName": "Math",
-        "testCoefficient": "0.4",
-        "quizCoefficient": "1",
-        "elCoefficient": "1"
+        {
+          "questionName": "3",
+          "maxMarks": "2"
+        },
+        {
+          "questionName": "4",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "5",
+          "maxMarks": "2"
+        },
+        {
+          "questionName": "6",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "7",
+          "maxMarks": "2"
+        }
+      ],
+      "Quiz 2": [
+        {
+          "questionName": "1",
+          "maxMarks": "2"
+        },
+        {
+          "questionName": "2",
+          "maxMarks": "2"
+        },
+        {
+          "questionName": "3",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "4",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "5",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "6",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "7",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "8",
+          "maxMarks": "1"
+        }
+      ],
+      "Quiz 3": [
+        {
+          "questionName": "1",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "2",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "3",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "4",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "5",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "6",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "7",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "8",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "9",
+          "maxMarks": "1"
+        },
+        {
+          "questionName": "10",
+          "maxMarks": "1"
+        }
+      ]
     },
-    "": {
-        "tests": {
-            "Test 1": [],
-            "Test 2": [],
-            "Test 3": []
-        },
-        "quizzes": {
-            "Quiz 1": [],
-            "Quiz 2": [],
-            "Quiz 3": []
-        },
-        "el": [],
-        "subjectName": "",
-        "testCoefficient": "",
-        "quizCoefficient": "",
-        "elCoefficient": ""
-    },
-    "webdev": {
-        "tests": {
-            "Test 1": [
-                {
-                    "questionName": "10",
-                    "maxMarks": "10"
-                }
-            ],
-            "Test 2": [],
-            "Test 3": []
-        },
-        "quizzes": {
-            "Quiz 1": [],
-            "Quiz 2": [],
-            "Quiz 3": []
-        },
-        "el": [],
-        "subjectName": "webdev",
-        "testCoefficient": "",
-        "quizCoefficient": "",
-        "elCoefficient": ""
-    }
+    "el": [
+      {
+        "questionName": "Phase 1",
+        "maxMarks": "20"
+      },
+      {
+        "questionName": "Phase 2",
+        "maxMarks": "20"
+      }
+    ],
+    "subjectName": "Web Programming",
+    "testCoefficient": 0.4,
+    "quizCoefficient": 1,
+    "elCoefficient": 1
+  }
 }
