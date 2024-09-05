@@ -108,7 +108,15 @@ submitButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(result => {
         console.log(result);
-            // Handle the response from the server
+        console.log(data["subjectName"]);
+        // alert("Enter marks at:  " + result["link"])
+        let p = document.createElement('p')
+        p.innerHTML = "Enter marks at:  " 
+        let link = document.createElement('a')
+        link.href = window.location.origin + result["link"]
+        link.innerHTML = window.location.origin + "/subjects/" + data["subjectName"]
+        document.body.appendChild(p)
+        document.body.appendChild(link)
     });
 
     console.log(data);

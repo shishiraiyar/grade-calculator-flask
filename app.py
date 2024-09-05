@@ -20,10 +20,10 @@ def create_test_page():
 def createTests():
     data = request.get_json()
 
-    testName = data["subjectName"]
-    maxMarksService.write(testName, data)
+    subjectName = data["subjectName"]
+    maxMarksService.write(subjectName, data)
 
-    return {"status": "success"}
+    return {"link": "/subjects/" + subjectName}
 
 @app.route('/subjects/<subjectName>')
 def getSubject(subjectName):
