@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-<body>
-    <h1>Create Subject</h1>
-    <input type="text" id="subjectName" placeholder="Subject name"> <br>
-
-    <input id="testCoefficient" type="number" placeholder="Test Coefficient"> <br>
-    <input id="quizCoefficient" type="number" placeholder="Quiz Coefficient"> <br>
-    <input id="elCoefficient" type="number" placeholder="EL Coefficient"> <br>
-    <div id="formWrapper"></div>
-    <button id="submit">Submit</button>
-    <script src="../static/js/createSubjectPage.js"></script>
-</body>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+  <body class="create">
+    <h1 class="create">Create Subject</h1>
+    <input
+      class="create"
+      type="text"
+      id="subjectName"
+      placeholder="Subject name"
+    />
+    <br />
+    <h2>Scheme Details:</h2>
+    <input
+      class="create"
+      id="testCoefficient"
+      type="number"
+      placeholder="Test Coefficient"
+    />
+    <br />
+    <input
+      class="create"
+      id="quizCoefficient"
+      type="number"
+      placeholder="Quiz Coefficient"
+    />
+    <br />
+    <input
+      class="create"
+      id="elCoefficient"
+      type="number"
+      placeholder="EL Coefficient"
+    />
+    <br />
+    <div class="create" id="formWrapper"></div>
+    <button class="create" id="submit">Submit</button>
+    <script class="create" src="../static/js/createSubjectPage.js"></script>
+  </body>
 </html>
