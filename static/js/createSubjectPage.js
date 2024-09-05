@@ -97,6 +97,9 @@ submitButton.addEventListener('click', () => {
     data.el = questions;
 
     data["subjectName"] = document.getElementById('subjectName').value;
+    data["testCoefficient"] = document.getElementById('testCoefficient').value;
+    data["quizCoefficient"] = document.getElementById('quizCoefficient').value;
+    data["elCoefficient"] = document.getElementById('elCoefficient').value;
 
     fetch('/createSubject', {
         method: 'POST',

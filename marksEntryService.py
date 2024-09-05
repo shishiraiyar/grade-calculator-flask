@@ -1,7 +1,8 @@
 import os
 import csv
-from schemeService import Scheme
 import math
+
+FILE_PREFIX = "csv/"
 
 class MarksEntryService:
     def __init__(self):
@@ -10,8 +11,8 @@ class MarksEntryService:
     def validateStudentMarks(self, marks, maxMarks):
         pass
 
-    def insertStudentMarks(self, subjectName, studentEmail, marks):
-        filename = subjectName + ".csv"
+    def insertStudentMarks(self, subjectName, studentEmail, marks, maxMarks):
+        filename = FILE_PREFIX + subjectName + ".csv"
         if not os.path.exists(filename):
             self.createCSVFile(filename, marks)
 
@@ -49,7 +50,11 @@ class MarksEntryService:
             row.append(question["marks"])
         row.append(sum)
         
-        total = testTotal*Scheme.testCoefficient + quizTotal*Scheme.quizCoefficient + sum*Scheme.elCoefficient
+        testCoefficient = maxMarks["testCoefficient"]
+        quizCoefficient = maxMarks["quizCoefficient"]
+        elCoefficient = maxMarks["elCoefficient"]
+
+        total = testTotal*testCoefficient + quizTotal*quizCoefficient + sum*elCoefficient
         
         row.append(math.ceil(total))
 
