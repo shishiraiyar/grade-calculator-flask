@@ -1,7 +1,7 @@
 import json
 import os
 
-class Database:
+class MaxMarksService:
     def __init__(self, filename):
         self.filename = filename
         if not os.path.exists(filename):
@@ -24,7 +24,7 @@ class Database:
     
 
 if __name__ == "__main__":
-    db = Database("data.json")
+    db = MaxMarksService("data.json")
     db.write("test", "hello")
     db.write("test2", "world")
     db.write("test3", {"hello": "world"})
