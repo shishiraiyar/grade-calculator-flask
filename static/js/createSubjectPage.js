@@ -12,8 +12,8 @@ function createQuestion() {
   let question = document.createElement("div");
   question.classList.add("questionInput");
   question.innerHTML = `
-        <input type="text" class="questionNameInput" style="margin:2px;"/>
-        <input type="number" class="maxMarksInput" style="margin:2px; "/>
+        <input type="text" class="questionNameInput" style="margin:2px;" placeholder="Question number"/>
+        <input type="number" class="maxMarksInput" style="margin:2px;" placeholder="Marks"/>
         <span class="questionDeleteButton" tabindex="-1">❌</span>
     `;
   let deleteButton = question.querySelector(".questionDeleteButton");

@@ -50,9 +50,9 @@ class MarksEntryService:
             row.append(question["marks"])
         row.append(sum)
         
-        testCoefficient = maxMarks["testCoefficient"]
-        quizCoefficient = maxMarks["quizCoefficient"]
-        elCoefficient = maxMarks["elCoefficient"]
+        testCoefficient = int(maxMarks["testCoefficient"])
+        quizCoefficient = int(maxMarks["quizCoefficient"])
+        elCoefficient = int(maxMarks["elCoefficient"])
 
         total = testTotal*testCoefficient + quizTotal*quizCoefficient + sum*elCoefficient
         

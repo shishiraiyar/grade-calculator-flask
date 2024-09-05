@@ -16,7 +16,7 @@
         {% for question in questions %}
         <div class="questionInput">
           <span class="marks">{{question["questionName"]}}</span>
-          <input class="marks" type="text" value="{{question["maxMarks"]}}"
+          <input class="marks maxMarks" type="text" value="{{question["maxMarks"]}}"
           disabled>
           <input type="number" class="marksInput" />
         </div>
@@ -28,7 +28,7 @@
         {% for question in questions %}
         <div class="questionInput">
           <span class="marksInput">{{question["questionName"]}}</span>
-          <input class="marksInput" type="text" value="{{question["maxMarks"]}}"
+          <input class="marks maxMarks" type="text" value="{{question["maxMarks"]}}"
           disabled>
           <input type="number" class="marksInput" />
         </div>
@@ -41,7 +41,7 @@
         {% for question in data["el"] %}
         <div class="questionInput">
           <span class="marksInput">{{question["questionName"]}}</span>
-          <input class="marksInput" type="text" value="{{question["maxMarks"]}}"
+          <input class="maxMarks" type="text" value="{{question["maxMarks"]}}"
           disabled>
           <input type="number" class="marksInput" />
         </div>
