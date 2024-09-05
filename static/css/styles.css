@@ -1,10 +1,66 @@
 .questionDeleteButton {
-    background-color: #aaaaaa;
+  background-color: #aaaaaa;
 
-    border: 1px solid;
-    border-radius: 50%;
-    padding: 1px;
-    /* font-size: small; */
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 1px;
+  /* font-size: small; */
 
-    cursor: pointer;
+  cursor: pointer;
+}
+
+/* General styles */
+body.home {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+h1.home {
+  color: #2320bd;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+/* Image styling */
+img.home {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Link styling */
+a.home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+a.home:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 600px) {
+  h1.home {
+    font-size: 2rem;
+  }
+
+  a.home {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  img.home {
+    width: 120px;
+  }
 }

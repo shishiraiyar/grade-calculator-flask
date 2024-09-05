@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" id="studentEmail" placeholder="Email">
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+  <body>
+    <input type="text" id="studentEmail" placeholder="Email" />
     <h1 id="subjectName">{{subjectName}}</h1>
     <form id="marksEntry">
-        {% for testName, questions in data["tests"].items() %}
-            <div id="{{testName}}" class="test">
-            <h2>{{testName}}</h2>
-            {% for question in questions %}
-                <div class="questionInput">
-                <span>{{question["questionName"]}}</span>
-                <input type="text" value="{{question["maxMarks"]}}" disabled>
-                <input type="number" class="marksInput">
-                </div>
-            {% endfor %}
-            </div>
-        {% endfor %}
-
-        {% for quizName, questions in data["quizzes"].items() %}
-            <div id="{{quizName}}" class="quiz">
-            <h2>{{quizName}}</h2>
-            {% for question in questions %}
-                <div class="questionInput">
-                <span>{{question["questionName"]}}</span>
-                <input type="text" value="{{question["maxMarks"]}}" disabled>
-                <input type="number" class="marksInput">
-                </div>
-            {% endfor %}
-            </div>
-        {% endfor %}
-
-
-    <h2>EL</h2>
-    <div class="el">
-    {% for question in data["el"] %}
+      {% for testName, questions in data["tests"].items() %}
+      <div id="{{testName}}" class="test">
+        <h2>{{testName}}</h2>
+        {% for question in questions %}
         <div class="questionInput">
-        <span>{{question["questionName"]}}</span>
-        <input type="text" value="{{question["maxMarks"]}}" disabled>
-        <input type="number" class="marksInput">
+          <span>{{question["questionName"]}}</span>
+          <input type="text" value="{{question["maxMarks"]}}" disabled>
+          <input type="number" class="marksInput" />
         </div>
-    {% endfor %}
-</div>
+        {% endfor %}
+      </div>
+      {% endfor %} {% for quizName, questions in data["quizzes"].items() %}
+      <div id="{{quizName}}" class="quiz">
+        <h2>{{quizName}}</h2>
+        {% for question in questions %}
+        <div class="questionInput">
+          <span>{{question["questionName"]}}</span>
+          <input type="text" value="{{question["maxMarks"]}}" disabled>
+          <input type="number" class="marksInput" />
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+
+      <h2>EL</h2>
+      <div class="el">
+        {% for question in data["el"] %}
+        <div class="questionInput">
+          <span>{{question["questionName"]}}</span>
+          <input type="text" value="{{question["maxMarks"]}}" disabled>
+          <input type="number" class="marksInput" />
+        </div>
+        {% endfor %}
+      </div>
     </form>
     <button id="submitMarks">Submit</button>
     <script src="../static/js/marksEntry.js"></script>
-</body>
+  </body>
 </html>

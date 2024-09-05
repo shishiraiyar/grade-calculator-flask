@@ -340,5 +340,28 @@
         },
         "el": [],
         "subjectName": "abc"
+    },
+    "Math": {
+        "tests": {
+            "Test 1": [
+                {
+                    "questionName": "1a",
+                    "maxMarks": "5"
+                },
+                {
+                    "questionName": "2a",
+                    "maxMarks": "10"
+                }
+            ],
+            "Test 2": [],
+            "Test 3": []
+        },
+        "quizzes": {
+            "Quiz 1": [],
+            "Quiz 2": [],
+            "Quiz 3": []
+        },
+        "el": [],
+        "subjectName": "Math"
     }
 }
