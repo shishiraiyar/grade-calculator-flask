@@ -16,7 +16,7 @@
         {% for question in questions %}
         <div class="questionInput">
           <span>{{question["questionName"]}}</span>
-          <input type="text" value="{{question["maxMarks"]}}" disabled>
+          <input type="text" class="maxMarks" value="{{question["maxMarks"]}}" disabled>
           <input type="number" class="marksInput" />
         </div>
         {% endfor %}
@@ -27,7 +27,7 @@
         {% for question in questions %}
         <div class="questionInput">
           <span>{{question["questionName"]}}</span>
-          <input type="text" value="{{question["maxMarks"]}}" disabled>
+          <input type="text" class="maxMarks" value="{{question["maxMarks"]}}" disabled>
           <input type="number" class="marksInput" />
         </div>
         {% endfor %}
@@ -39,7 +39,7 @@
         {% for question in data["el"] %}
         <div class="questionInput">
           <span>{{question["questionName"]}}</span>
-          <input type="text" value="{{question["maxMarks"]}}" disabled>
+          <input type="text" class="maxMarks" value="{{question["maxMarks"]}}" disabled>
           <input type="number" class="marksInput" />
         </div>
         {% endfor %}

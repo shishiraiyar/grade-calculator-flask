@@ -214,6 +214,9 @@
         "maxMarks": "20"
       }
     ],
-    "subjectName": "Web Programming"
+    "subjectName": "Web Programming",
+    "testCoefficient": 0.4,
+    "quizCoefficient": 1,
+    "elCoefficient": 1
   }
 }

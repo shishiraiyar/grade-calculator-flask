@@ -5,7 +5,12 @@ function aggregateFormData(wrapper){
     let data = []
     for (let question of questions){
         let questionName = question.querySelector('span').textContent;
-        let marks = question.querySelector('.marksInput').value;
+        let marks = parseInt(question.querySelector('.marksInput').value);
+        let maxMarks = parseInt(question.querySelector('.maxMarks').value);
+        if (marks>maxMarks || marks< 0) {
+            alert("Invalid marks entered")
+            return 0;
+        }
         data.push(
             {
                 questionName: questionName,
@@ -16,7 +21,6 @@ function aggregateFormData(wrapper){
     return data;
 }
 
-// console.log(aggregateFormData(document.getElementById("Test 1")));
 
 document.getElementById("submitMarks").addEventListener('click', () => {
     let email = document.getElementById("studentEmail").value;
@@ -33,16 +37,22 @@ document.getElementById("submitMarks").addEventListener('click', () => {
     for (let test of tests){
         let testName = test.id;
         let questions = aggregateFormData(test);
+        if (questions === 0)
+            return;
         data.tests[testName] = questions;
     }
 
     for (let quiz of quizzes){
         let quizName = quiz.id;
         let questions = aggregateFormData(quiz);
+        if (questions === 0)
+            return;
         data.quizzes[quizName] = questions;
     }
 
     let questions = aggregateFormData(el);
+    if (questions === 0)
+        return;
     data.el = questions;
 
     data["email"] = email;

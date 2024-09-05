@@ -23,7 +23,7 @@ class MarksEntryService:
             sum = 0
             for question in marks["tests"][test]:
                 row.append(question["marks"])
-                sum += int(question["marks"]) if question["marks"] != "" else 0
+                sum += int(question["marks"]) if question["marks"] else 0
             row.append(sum)
             testMarks.append(sum)
 
@@ -36,7 +36,7 @@ class MarksEntryService:
             sum = 0
             for question in marks["quizzes"][quiz]:
                 row.append(question["marks"])
-                sum += int(question["marks"]) if question["marks"] != "" else 0
+                sum += int(question["marks"]) if question["marks"] else 0
             row.append(sum)
             quizMarks.append(sum)
 
@@ -46,7 +46,7 @@ class MarksEntryService:
 
         sum = 0
         for question in marks["el"]:
-            sum += int(question["marks"]) if question["marks"] != "" else 0
+            sum += int(question["marks"]) if question["marks"] else 0
             row.append(question["marks"])
         row.append(sum)
         
