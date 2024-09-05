@@ -49,18 +49,66 @@ a.home:hover {
   background-color: #0056b3;
 }
 
-/* Mobile responsive styling */
-@media (max-width: 600px) {
-  h1.home {
-    font-size: 2rem;
-  }
+/* General styles */
+body.create {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Allow the page to grow beyond viewport height */
+  padding: 20px; /* Add some padding to prevent content from touching edges */
+}
 
-  a.home {
-    padding: 8px 16px;
-    font-size: 1rem;
-  }
+h1.create {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-  img.home {
-    width: 120px;
-  }
+/* Input field styles */
+input.create {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input.create:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styles */
+button.create {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button.create:hover {
+  background-color: #45a049;
+}
+
+/* Form wrapper styles */
+div#create {
+  margin-top: 20px;
+}
+
+/* Enable scrolling */
+html,
+body {
+  overflow-y: auto; /* Allow vertical scrolling */
 }
