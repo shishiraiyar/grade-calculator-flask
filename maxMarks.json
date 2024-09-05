@@ -263,5 +263,44 @@
         "testCoefficient": "0.4",
         "quizCoefficient": "1",
         "elCoefficient": "1"
+    },
+    "": {
+        "tests": {
+            "Test 1": [],
+            "Test 2": [],
+            "Test 3": []
+        },
+        "quizzes": {
+            "Quiz 1": [],
+            "Quiz 2": [],
+            "Quiz 3": []
+        },
+        "el": [],
+        "subjectName": "",
+        "testCoefficient": "",
+        "quizCoefficient": "",
+        "elCoefficient": ""
+    },
+    "webdev": {
+        "tests": {
+            "Test 1": [
+                {
+                    "questionName": "10",
+                    "maxMarks": "10"
+                }
+            ],
+            "Test 2": [],
+            "Test 3": []
+        },
+        "quizzes": {
+            "Quiz 1": [],
+            "Quiz 2": [],
+            "Quiz 3": []
+        },
+        "el": [],
+        "subjectName": "webdev",
+        "testCoefficient": "",
+        "quizCoefficient": "",
+        "elCoefficient": ""
     }
 }
