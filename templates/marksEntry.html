@@ -24,10 +24,10 @@
       </div>
       {% endfor %} {% for quizName, questions in data["quizzes"].items() %}
       <div id="{{quizName}}" class="quiz">
-        <h2 class="marksInput">{{quizName}}</h2>
+        <h2>{{quizName}}</h2>
         {% for question in questions %}
         <div class="questionInput">
-          <span class="marksInput">{{question["questionName"]}}</span>
+          <span>{{question["questionName"]}}</span>
           <input class="marks maxMarks" type="text" value="{{question["maxMarks"]}}"
           disabled>
           <input type="number" class="marksInput" />
@@ -36,11 +36,11 @@
       </div>
       {% endfor %}
 
-      <h2 class="marksInput">EL</h2>
+      <h2>EL</h2>
       <div class="el">
         {% for question in data["el"] %}
         <div class="questionInput">
-          <span class="marksInput">{{question["questionName"]}}</span>
+          <span>{{question["questionName"]}}</span>
           <input class="maxMarks" type="text" value="{{question["maxMarks"]}}"
           disabled>
           <input type="number" class="marksInput" />
